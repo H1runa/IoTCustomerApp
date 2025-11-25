@@ -1,4 +1,4 @@
-package com.hiruna.iotmobileapp.custom_preference;
+package com.hiruna.iotcustomerapp.custom_preference;
 
 import android.content.Context;
 import android.content.res.TypedArray;
@@ -13,7 +13,7 @@ import androidx.preference.PreferenceViewHolder;
 import com.google.firebase.Timestamp;
 import com.google.firebase.firestore.DocumentReference;
 import com.google.firebase.firestore.FirebaseFirestore;
-import com.hiruna.iotmobileapp.R;
+import com.hiruna.iotcustomerapp.R;
 
 import java.util.Calendar;
 import java.util.HashMap;

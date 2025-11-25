@@ -1,4 +1,4 @@
-package com.hiruna.iotmobileapp;
+package com.hiruna.iotcustomerapp;
 
 import android.os.Bundle;
 
@@ -9,8 +9,8 @@ import androidx.fragment.app.DialogFragment;
 import androidx.preference.Preference;
 import androidx.preference.PreferenceFragmentCompat;
 import com.google.firebase.firestore.FirebaseFirestore;
-import com.hiruna.iotmobileapp.custom_preference.TimePreference;
-import com.hiruna.iotmobileapp.custom_preference.preference_fragment.TimePreferenceDialogFragmentCompat;
+import com.hiruna.iotcustomerapp.custom_preference.TimePreference;
+import com.hiruna.iotcustomerapp.custom_preference.preference_fragment.TimePreferenceDialogFragmentCompat;
 
 public class ParametersActivity extends AppCompatActivity {
 

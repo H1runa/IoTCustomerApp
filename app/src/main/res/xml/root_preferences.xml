@@ -3,13 +3,13 @@
 
     <PreferenceCategory app:title="System Parameters" android:layout="@layout/preference_title">
 
-        <com.hiruna.iotmobileapp.custom_preference.NumberPreference
+        <com.hiruna.iotcustomerapp.custom_preference.NumberPreference
             app:key="water_limit"
             app:title="Water Limit"
             app:summary="Loading..."
             android:layout="@layout/preference_item"
             />
-        <com.hiruna.iotmobileapp.custom_preference.TimePreference
+        <com.hiruna.iotcustomerapp.custom_preference.TimePreference
             app:key="time_picker"
             app:title="Set Sleep Time"
             app:summary="Tap to set sleep time"

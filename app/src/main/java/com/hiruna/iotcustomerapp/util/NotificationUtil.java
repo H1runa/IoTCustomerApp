@@ -1,4 +1,4 @@
-package com.hiruna.iotmobileapp.util;
+package com.hiruna.iotcustomerapp.util;
 
 import static androidx.core.content.ContextCompat.getSystemService;
 
@@ -9,7 +9,7 @@ import android.os.Build;
 
 import androidx.core.app.NotificationCompat;
 
-import com.hiruna.iotmobileapp.R;
+import com.hiruna.iotcustomerapp.R;
 
 public class NotificationUtil {
     public static void createNotificationChannel(String channelName, String desc, Context context, String channel_id) {

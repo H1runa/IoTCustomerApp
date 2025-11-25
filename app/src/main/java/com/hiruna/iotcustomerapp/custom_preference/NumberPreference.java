@@ -1,20 +1,18 @@
-package com.hiruna.iotmobileapp.custom_preference;
+package com.hiruna.iotcustomerapp.custom_preference;
 
 import android.content.Context;
 import android.text.InputType;
 import android.util.AttributeSet;
-import android.view.View;
 import android.widget.TextView;
 
 import androidx.annotation.NonNull;
 import androidx.annotation.Nullable;
-import androidx.appcompat.view.menu.MenuView;
 import androidx.preference.EditTextPreference;
 import androidx.preference.PreferenceViewHolder;
 
 import com.google.firebase.firestore.DocumentReference;
 import com.google.firebase.firestore.FirebaseFirestore;
-import com.hiruna.iotmobileapp.R;
+import com.hiruna.iotcustomerapp.R;
 
 import java.util.HashMap;
 

@@ -8,6 +8,25 @@
   "client": [
     {
       "client_info": {
+        "mobilesdk_app_id": "1:278639321630:android:a6aa9dab0309171484040f",
+        "android_client_info": {
+          "package_name": "com.hiruna.iotcustomerapp"
+        }
+      },
+      "oauth_client": [],
+      "api_key": [
+        {
+          "current_key": "AIzaSyDcrZt3bzJUjtuhac5ZqYlbeuEDXBRkgQg"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": []
+        }
+      }
+    },
+    {
+      "client_info": {
         "mobilesdk_app_id": "1:278639321630:android:4e6f215e50e6ba4284040f",
         "android_client_info": {
           "package_name": "com.hiruna.iotmobileapp"

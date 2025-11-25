@@ -1,4 +1,4 @@
-package com.hiruna.iotmobileapp;
+package com.hiruna.iotcustomerapp;
 
 import android.content.Context;
 

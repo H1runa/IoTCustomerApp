@@ -1,4 +1,4 @@
-package com.hiruna.iotmobileapp;
+package com.hiruna.iotcustomerapp;
 
 import static android.view.View.TEXT_ALIGNMENT_CENTER;
 
@@ -8,9 +8,6 @@ import android.content.res.ColorStateList;
 import android.graphics.Color;
 import android.os.Build;
 import android.os.Bundle;
-import android.view.Gravity;
-import android.view.View;
-import android.widget.Button;
 import android.widget.TextView;
 import java.util.Calendar;
 import java.util.Date;
@@ -21,7 +18,6 @@ import androidx.appcompat.app.AppCompatActivity;
 import androidx.core.graphics.Insets;
 import androidx.core.view.ViewCompat;
 import androidx.core.view.WindowInsetsCompat;
-import androidx.fragment.app.DialogFragment;
 
 import com.google.android.gms.tasks.OnCompleteListener;
 import com.google.android.gms.tasks.Task;
@@ -35,10 +31,10 @@ import com.google.firebase.database.FirebaseDatabase;
 import com.google.firebase.database.ValueEventListener;
 import com.google.firebase.firestore.CollectionReference;
 import com.google.firebase.firestore.DocumentReference;
-import com.google.firebase.firestore.DocumentSnapshot;
 import com.google.firebase.firestore.FirebaseFirestore;
-import com.hiruna.iotmobileapp.dialog.WaterDialog;
-import com.hiruna.iotmobileapp.util.NotificationUtil;
+import com.google.firebase.messaging.FirebaseMessaging;
+import com.hiruna.iotcustomerapp.dialog.WaterDialog;
+import com.hiruna.iotcustomerapp.util.NotificationUtil;
 
 public class MainActivity extends AppCompatActivity {
 
@@ -64,10 +60,10 @@ public class MainActivity extends AppCompatActivity {
         });
 
         //parameters button action
-        MaterialButton paramsBtn = (MaterialButton) findViewById(R.id.paramsBtn);
-        paramsBtn.setOnClickListener((view)->{
-            startActivity(new Intent(this, ParametersActivity.class)); //starting system parameters activity
-        });
+//        MaterialButton paramsBtn = (MaterialButton) findViewById(R.id.paramsBtn);
+//        paramsBtn.setOnClickListener((view)->{
+//            startActivity(new Intent(this, ParametersActivity.class)); //starting system parameters activity
+//        });
 
         //analytics button action
         MaterialButton analBtn = (MaterialButton) findViewById(R.id.analyticsBtn);
@@ -84,6 +80,8 @@ public class MainActivity extends AppCompatActivity {
 
         //creating notification channel
         NotificationUtil.createNotificationChannel("notifChannel", "BasicNotifChannel", this, "highPrioChannel");
+
+        FirebaseMessaging.getInstance().subscribeToTopic("all-users");
 
 //        FirebaseMessaging.getInstance().getToken().addOnSuccessListener((token)->{
 //            System.out.println("FCM Token : " + token);

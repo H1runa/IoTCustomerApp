@@ -1,4 +1,4 @@
-package com.hiruna.iotmobileapp;
+package com.hiruna.iotcustomerapp;
 
 import org.junit.Test;
 

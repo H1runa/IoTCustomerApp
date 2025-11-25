@@ -4,13 +4,13 @@ plugins {
 }
 
 android {
-    namespace = "com.hiruna.iotmobileapp"
+    namespace = "com.hiruna.iotcustomerapp"
     compileSdk {
         version = release(36)
     }
 
     defaultConfig {
-        applicationId = "com.hiruna.iotmobileapp"
+        applicationId = "com.hiruna.iotcustomerapp"
         minSdk = 27
         targetSdk = 36
         versionCode = 1

@@ -1,4 +1,4 @@
-package com.hiruna.iotmobileapp.dialog;
+package com.hiruna.iotcustomerapp.dialog;
 
 import android.graphics.Color;
 import android.graphics.drawable.ColorDrawable;
@@ -8,7 +8,6 @@ import android.view.View;
 import android.view.ViewGroup;
 import android.view.Window;
 import android.view.animation.AccelerateDecelerateInterpolator;
-import android.view.animation.Animation;
 import android.widget.ProgressBar;
 import android.widget.TextView;
 
@@ -16,25 +15,19 @@ import androidx.annotation.NonNull;
 import androidx.annotation.Nullable;
 import androidx.fragment.app.DialogFragment;
 
-import com.google.android.material.circularreveal.CircularRevealHelper;
 import com.google.firebase.Timestamp;
 import com.google.firebase.firestore.CollectionReference;
 import com.google.firebase.firestore.DocumentReference;
 import com.google.firebase.firestore.DocumentSnapshot;
 import com.google.firebase.firestore.FirebaseFirestore;
-import com.hiruna.iotmobileapp.R;
+import com.hiruna.iotcustomerapp.R;
 import com.yy.mobile.rollingtextview.CharOrder;
 import com.yy.mobile.rollingtextview.RollingTextView;
-import com.yy.mobile.rollingtextview.strategy.CharOrderStrategy;
-import com.yy.mobile.rollingtextview.strategy.Direction;
 import com.yy.mobile.rollingtextview.strategy.Strategy;
-
-import org.w3c.dom.Text;
 
 import java.text.DecimalFormat;
 import java.util.Calendar;
 import java.util.Date;
-import java.util.List;
 import java.util.concurrent.atomic.AtomicLong;
 
 public class WaterDialog extends DialogFragment {

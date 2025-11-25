@@ -1,4 +1,4 @@
-package com.hiruna.iotmobileapp.custom_preference.preference_fragment;
+package com.hiruna.iotcustomerapp.custom_preference.preference_fragment;
 
 
 import android.os.Bundle;
@@ -12,8 +12,8 @@ import androidx.preference.PreferenceDialogFragmentCompat;
 import com.google.firebase.Timestamp;
 import com.google.firebase.firestore.DocumentReference;
 import com.google.firebase.firestore.FirebaseFirestore;
-import com.hiruna.iotmobileapp.R;
-import com.hiruna.iotmobileapp.custom_preference.TimePreference;
+import com.hiruna.iotcustomerapp.R;
+import com.hiruna.iotcustomerapp.custom_preference.TimePreference;
 
 import java.util.Calendar;
 

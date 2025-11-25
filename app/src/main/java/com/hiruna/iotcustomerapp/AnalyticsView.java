@@ -1,24 +1,20 @@
-package com.hiruna.iotmobileapp;
+package com.hiruna.iotcustomerapp;
 
 import android.content.res.ColorStateList;
 import android.graphics.Color;
 import android.os.Bundle;
 
-import com.google.android.material.floatingactionbutton.FloatingActionButton;
 import com.google.android.material.snackbar.Snackbar;
 import com.google.android.material.tabs.TabLayout;
 
 import androidx.viewpager.widget.ViewPager;
 import androidx.appcompat.app.AppCompatActivity;
 
-import android.view.Menu;
-import android.view.MenuItem;
-import android.view.View;
 import android.widget.TextView;
 
-import com.hiruna.iotmobileapp.ui.main.PlaceholderFragment;
-import com.hiruna.iotmobileapp.ui.main.SectionsPagerAdapter;
-import com.hiruna.iotmobileapp.databinding.ActivityAnalyticsViewBinding;
+import com.hiruna.iotcustomerapp.ui.main.PlaceholderFragment;
+import com.hiruna.iotcustomerapp.ui.main.SectionsPagerAdapter;
+import com.hiruna.iotcustomerapp.databinding.ActivityAnalyticsViewBinding;
 
 public class AnalyticsView extends AppCompatActivity {
 

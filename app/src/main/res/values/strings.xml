@@ -1,5 +1,5 @@
 <resources>
-    <string name="app_name">Controller for WaterDispenser</string>
+    <string name="app_name">Patient App for WaterDispenser</string>
     <string name="title_activity_parameters">ParametersActivity</string>
 
     <!-- Preference Titles -->

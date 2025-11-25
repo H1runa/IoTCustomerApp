@@ -1,0 +1,30 @@
+{
+  "project_info": {
+    "project_number": "278639321630",
+    "firebase_url": "https://water-dispenser-7819c-default-rtdb.asia-southeast1.firebasedatabase.app",
+    "project_id": "water-dispenser-7819c",
+    "storage_bucket": "water-dispenser-7819c.firebasestorage.app"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:278639321630:android:4e6f215e50e6ba4284040f",
+        "android_client_info": {
+          "package_name": "com.hiruna.iotmobileapp"
+        }
+      },
+      "oauth_client": [],
+      "api_key": [
+        {
+          "current_key": "AIzaSyDcrZt3bzJUjtuhac5ZqYlbeuEDXBRkgQg"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": []
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

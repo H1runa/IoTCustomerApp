@@ -1,0 +1,217 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/main"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/gradient_background"
+    android:padding="16dp"
+    tools:context=".MainActivity">
+
+    <TextView
+        android:id="@+id/welcometext"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="24dp"
+        android:text="Controller Dashboard"
+        android:textColor="@color/white"
+        android:textSize="28sp"
+        android:textStyle="bold"
+        android:fontFamily="sans-serif-medium"
+        android:letterSpacing="0.01"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:id="@+id/blackbackground"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="32dp"
+        android:background="@drawable/rounded_background"
+        android:elevation="4dp"
+        android:padding="24dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/welcometext">
+
+        <TextView
+            android:id="@+id/containerlevel"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Current Container Level"
+            android:textAlignment="center"
+            android:textColor="#E0E0E0"
+            android:textSize="18sp"
+            android:fontFamily="sans-serif"
+            android:letterSpacing="0.02"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <TextView
+            android:id="@+id/containerlevelvalue"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="12dp"
+            android:text="..."
+            android:textAlignment="center"
+            android:textColor="#FFFFFF"
+            android:textSize="56sp"
+            android:textStyle="bold"
+            android:fontFamily="sans-serif-light"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/containerlevel" />
+
+        <View
+            android:id="@+id/divider"
+            android:layout_width="0dp"
+            android:layout_height="1dp"
+            android:layout_marginTop="24dp"
+            android:background="#333333"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/containerlevelvalue" />
+
+        <TextView
+            android:id="@+id/waterQuality"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="24dp"
+            android:text="Water Quality:"
+            android:textColor="#B0B0B0"
+            android:textSize="16sp"
+            android:fontFamily="sans-serif-medium"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/divider" />
+
+        <TextView
+            android:id="@+id/waterQualityValue"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="12dp"
+            android:text="..."
+            android:textAlignment="viewEnd"
+            android:textColor="#FFFFFF"
+            android:textSize="16sp"
+            android:textStyle="bold"
+            android:fontFamily="sans-serif"
+            app:layout_constraintBaseline_toBaselineOf="@+id/waterQuality"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toEndOf="@+id/waterQuality" />
+
+        <TextView
+            android:id="@+id/containerAmount"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="16dp"
+            android:text="Water Amount:"
+            android:textColor="#B0B0B0"
+            android:textSize="16sp"
+            android:fontFamily="sans-serif-medium"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/waterQuality" />
+
+        <TextView
+            android:id="@+id/containerAmountValue"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="12dp"
+            android:text="..."
+            android:textAlignment="viewEnd"
+            android:textColor="#FFFFFF"
+            android:textSize="16sp"
+            android:textStyle="bold"
+            android:fontFamily="sans-serif"
+            app:layout_constraintBaseline_toBaselineOf="@+id/containerAmount"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toEndOf="@+id/containerAmount" />
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:id="@+id/navigation"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="32dp"
+        android:layout_marginBottom="16dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/blackbackground"
+        app:layout_constraintVertical_bias="0.0">
+
+        <com.google.android.material.button.MaterialButton
+            android:id="@+id/paramsBtn"
+            android:layout_width="0dp"
+            android:layout_height="110dp"
+            android:layout_marginEnd="8dp"
+            android:backgroundTint="#2C2C2E"
+            android:text="Parameters"
+            android:textSize="14sp"
+            android:textColor="@color/white"
+            android:textAllCaps="false"
+            android:fontFamily="sans-serif-medium"
+            app:cornerRadius="16dp"
+            app:icon="@drawable/settings_icon"
+            app:iconGravity="textTop"
+            app:iconSize="48dp"
+            app:iconPadding="8dp"
+            app:iconTint="@null"
+            app:strokeWidth="0dp"
+            app:elevation="2dp"
+            app:layout_constraintEnd_toStartOf="@+id/analyticsBtn"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <com.google.android.material.button.MaterialButton
+            android:id="@+id/analyticsBtn"
+            android:layout_width="0dp"
+            android:layout_height="110dp"
+            android:layout_marginStart="8dp"
+            android:backgroundTint="#2C2C2E"
+            android:text="Analytics"
+            android:textSize="14sp"
+            android:textColor="@color/white"
+            android:textAllCaps="false"
+            android:fontFamily="sans-serif-medium"
+            app:cornerRadius="16dp"
+            app:icon="@drawable/analytics_icon"
+            app:iconGravity="textTop"
+            app:iconSize="48dp"
+            app:iconPadding="8dp"
+            app:iconTint="@null"
+            app:strokeWidth="0dp"
+            app:elevation="2dp"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toEndOf="@+id/paramsBtn"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <com.google.android.material.button.MaterialButton
+            android:id="@+id/waterBtn"
+            android:layout_width="0dp"
+            android:layout_height="110dp"
+            android:layout_marginTop="16dp"
+            android:backgroundTint="#2C2C2E"
+            android:text="Water Intake"
+            android:textColor="@color/white"
+            android:textSize="14sp"
+            android:textAllCaps="false"
+            android:fontFamily="sans-serif-medium"
+            app:cornerRadius="16dp"
+            app:icon="@drawable/water_icon"
+            app:iconGravity="textTop"
+            app:iconSize="48dp"
+            app:iconPadding="8dp"
+            app:iconTint="@null"
+            app:strokeWidth="0dp"
+            app:elevation="2dp"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/paramsBtn" />
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+</androidx.constraintlayout.widget.ConstraintLayout>
